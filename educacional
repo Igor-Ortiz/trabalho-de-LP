@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+int  exercicio;
+int resposta;
+int resultado1=2;
+int resultado2=4;
+int resultado3=6;
+char nome[20];
+char baleia[20]="whale";
+char abelha[20]="bee";
+char cachorro[20]="dog";
+int pontuacao=0;
+
+
+printf ("Digite um opcão de 1=ingles 2=matematica  ");
+scanf("%d", &exercicio);
+switch ( exercicio )
+
+{
+case 1 :
+printf ("ingles\n");
+while (strcmp(nome, baleia) != 0){
+
+printf(" como se escreve baleia em ingles? :\n ");
+scanf("%s", nome);
+
+}
+
+
+while (strcmp(nome, abelha) != 0){
+
+printf("como se escreve abelha em ingles? :\n ");
+scanf("%s", nome);
+}
+while (strcmp(nome, cachorro) != 0){
+
+printf("como se escreve cachorro em ingles? :\n ");
+scanf("%s", nome);
+
+
+}
+printf("Parabéns, voce traduziu corretamente!\n");
+
+
+break;
+
+
+case 2 :
+printf ("matematica\n");
+while (resposta!=resultado1){
+
+printf(" quantos é 1+1? :\n ");
+scanf("%d",&resposta);
+}
+
+while (resposta!=resultado2){
+
+printf(" quantos é 2+2? :\n ");
+scanf("%d",&resposta);
+}
+while (resposta!=resultado3){
+
+printf(" quantos é 3+3? :\n ");
+scanf("%d",&resposta);
+}
+
+
+printf("voce acertou\n");
+
+break;
+
+
+
+default :
+printf ("Valor invalido!\n");
+}
+}
